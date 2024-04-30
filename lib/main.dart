@@ -130,42 +130,39 @@ class Home extends StatelessWidget{
                         ),
                         Text('F R. Rukon Sarkar', style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),),
                         Text('frrukonsarkar@gmail.com', style: TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.w100),),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 5),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: [
-                              Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  IconButton(onPressed: () async{
-                                    await  goToWebPage("tel:01647707659");
-                                  }, icon: Icon(Icons.call_end_rounded, color: Colors.green,)),
-                                  Text('Call', style: TextStyle(color: Colors.green, fontSize: 12))
-                                ],
-                              ),
-                              Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  IconButton(onPressed: () async {
-                                    await  goToWebPage("mailto:programmerrukon@gmail.com");
-                                  }, icon: Icon(Icons.email, color: Colors.green,)),
-                                  Text('E-mail', style: TextStyle(color: Colors.green, fontSize: 12))
-                                ],
-                              ),
-                              Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  IconButton(onPressed: () async {
-                                    await  goToWebPage("https://facebook.com/programmerrukon");
-                                  }, icon: Icon(Icons.facebook, color: Colors.green,)),
-                                  Text('Facebook', style: TextStyle(color: Colors.green, fontSize: 12))
-                                ],
-                              ),
-                            ],
-                          ),
+                        Row(
+                          mainAxisSize: MainAxisSize.max,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                IconButton(onPressed: () async{
+                                  await  goToWebPage("tel:01647707659");
+                                }, icon: Icon(Icons.call_end_rounded, color: Colors.green,)),
+                                Text('Call', style: TextStyle(color: Colors.green, fontSize: 12))
+                              ],
+                            ),
+                            Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                IconButton(onPressed: () async {
+                                  await  goToWebPage("mailto:programmerrukon@gmail.com");
+                                }, icon: Icon(Icons.email, color: Colors.green,)),
+                                Text('E-mail', style: TextStyle(color: Colors.green, fontSize: 12))
+                              ],
+                            ),
+                            Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                IconButton(onPressed: () async {
+                                  await  goToWebPage("https://facebook.com/programmerrukon");
+                                }, icon: Icon(Icons.facebook, color: Colors.green,)),
+                                Text('Facebook', style: TextStyle(color: Colors.green, fontSize: 12))
+                              ],
+                            ),
+                          ],
                         ),
                       ],
                     ),
